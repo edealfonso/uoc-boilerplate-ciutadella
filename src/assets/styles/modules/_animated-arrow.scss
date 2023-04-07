@@ -1,0 +1,8 @@
+.animated-arrow {
+  animation: up-n-down 1.5s $anim2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes up-n-down {
+  50%   { transform: translateY( 1.5rem );}
+} 

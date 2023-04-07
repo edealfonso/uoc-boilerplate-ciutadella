@@ -1,12 +1,37 @@
-@use "sass:color";
+// Fonts
+$f: 'Quicksand', sans-serif;
+$f-fa: "Font Awesome 6 Free", sans-serif;
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+// Font sizes
+$fs-xxl: clamp(5.5rem, min(13vw, 20vh), 18rem);
+$fs-xl: clamp(3rem, 4vw, 7rem);
+$fs-l: clamp(2.4rem, 2.4vw, 4rem);
+$fs-m: clamp(1.8rem, 1.8vw, 2.2rem);
+$fs-s: clamp(1.5rem, 1.3vw, 1.9rem);
+$fs-xs: clamp(1.2rem, 1vw, 1.7rem);
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+// Color palette
+// Source: https://colorhunt.co/palette/3c625561876ea6bb8deae7b1
+$primary: rgb(60 98 85);
+$secondary: rgb(97 135 110);
+$highlight: rgb(166 187 141);
+$bg: white;
+$bg-alt: rgb(234 231 177);
+$bg-alt-lighter: rgb(234 231 177 / .6);
 
-$mqMinWidth: 420px;
+// Spacing
+$pad-l: max(10vw, 4rem);
+$pad-x: max(8vw, 1.5rem);
+$pad-y: max(5vw, 2.5rem);
+$pad-m: max(2.5vw, 2rem);
+$pad-s: max(1.8vw, 1.5rem);
+
+// Animation 
+// Linear functions
+$anim1: cubic-bezier(.16,.41,.77,.58);
+$anim2: cubic-bezier(.34,.39,.67,.91);
+
+// Media queries
+$media-tablet: "only screen and (max-width : 1024px)";
+$media-mobile: "only screen and (max-width : 767px)";
+$media-small: "only screen and (max-width : 420px)";

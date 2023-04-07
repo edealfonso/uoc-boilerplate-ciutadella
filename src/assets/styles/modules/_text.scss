@@ -1,0 +1,42 @@
+.text {
+
+  &__highlight {
+    max-width: 35em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-size: $fs-xl;
+    font-weight: 500;
+    line-height: 1.1;
+
+    color: $secondary;
+  }
+
+  &__title {
+    margin-top: $pad-l;
+    margin-bottom: 1.5em;
+
+    font-size: $fs-l;
+    font-weight: 600;
+    color: $secondary;
+
+    border-bottom: 3px solid $bg-alt;
+
+  }
+
+  &__default {
+    max-width: 32em;
+    margin-bottom: 2em;
+    margin-left: auto;
+  }
+
+  &__columns {
+    column-count: 2;
+    column-gap: $pad-y;
+    max-width: 45em;
+
+    @media #{$media-mobile} {
+      column-count: 1;
+    }
+  }
+}

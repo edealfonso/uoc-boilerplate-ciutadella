@@ -1,0 +1,12 @@
+.box {
+  @include box-shadow;
+
+  &__title {
+    padding-bottom: 0.5em;
+    font-size: $fs-l;
+    font-weight: 500;
+    color: $secondary;
+  }
+
+  &__text { font-weight: 500; }
+}
