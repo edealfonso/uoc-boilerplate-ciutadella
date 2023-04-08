@@ -18,6 +18,10 @@ body {
   background-color: $bg;
 }
 
+section {
+  overflow: hidden;
+}
+
 p {
   padding-bottom: 0.8em;
 

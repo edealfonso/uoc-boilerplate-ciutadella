@@ -1,16 +1,20 @@
-/**
- * Import dependencies from node_modules
- * see commented examples below
- */
+//--------------------------
+// Import dependencies from node_modules
+//--------------------------
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
+// import { AOS } from "aos";
+// import * as AOS from 'aos/dist/aos.js';
+import AOS from 'aos';
 
-/**
- * Write any other JavaScript below
- */
+//--------------------------
+// Write any other JavaScript below
+//--------------------------
 
 +( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
+  window.addEventListener('load', ()=>{
+    AOS.init({
+      once: true,
+      duration: 1500
+    });
+  });
 } )();
