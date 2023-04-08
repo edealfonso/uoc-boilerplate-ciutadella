@@ -15,21 +15,23 @@
 
   &__caption {
     position: absolute;
-    bottom: 0;
+
     right: 0;
+    bottom: 0;
     z-index: 1;
     width: 100%;
     padding: $pad-m $pad-x;
+
     background-color: rgb(255 255 255 / .7);
 
     &--big {
       right: 5em;
+      
       display: flex;
       flex-direction: column;
       width: 15em;
       height: 100%;
       padding: $pad-y $pad-s;
-
     }
 
     @media #{$media-tablet} {
@@ -44,7 +46,6 @@
       position: static;
       width: 100%;
       height: unset;
-      background-color: $bg-alt;
       background-color: $bg-alt-lighter;
     }
   }

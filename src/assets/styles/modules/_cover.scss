@@ -1,11 +1,13 @@
 .cover {
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
   padding: $pad-y $pad-x;
   margin-bottom: $pad-y;
+  
   background-color: $bg-alt;
 
   &__title {
